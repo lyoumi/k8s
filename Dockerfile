@@ -3,6 +3,7 @@ RUN rm -rvf build && rm -rvf k8s
 RUN mkdir build && cd build \
     && git clone https://github.com/lyoumi/k8s.git \
     && cd k8s \
+    && git log \
     && mvn clean install \
     && cd target \
     && ls -la \
