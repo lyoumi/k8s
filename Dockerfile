@@ -1,4 +1,4 @@
-FROM lyoumi/cwg
+FROM lyoumi/cwg:base
 RUN rm -rvf build && rm -rvf k8s
 RUN mkdir build && cd build \
     && git clone https://github.com/lyoumi/k8s.git \
