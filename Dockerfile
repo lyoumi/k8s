@@ -6,5 +6,5 @@ RUN mkdir build && cd build \
     && git pull \
     && mvn clean install \
     && cd target \
-    && cp example-0.0.1-SNAPSHOT.jar /build/app.jar
+    && cp example-1.0.0.jar /build/app.jar
 ENTRYPOINT exec java -jar /build/app.jar --debug
